@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Poppins&display=swap');
+
+@layer components  {
+    .layout {
+      background: linear-gradient(113.06deg, #09092D 0.65%, #1E003C 56.02%, #09002D 100%);
+    }
+    .nav-link {
+        @apply text-white font-popins leading-[27px] text-[20px] px-12
+    }
+    .home-link {
+        @apply text-white font-semibold leading-[54px] text-[36px] font-popins
+    }    
+    .colored {
+        @apply text-primary
+    }
+    
+    .nav {
+        @apply px-12 py-12 flex justify-between items-center
+    }
+
+    .nav-display {
+        @apply flex items-center justify-between 
+    }
+    .default {
+        @apply  font-popins
+    }
+    
+    .connect {
+        background: linear-gradient(96.54deg, rgba(21, 163, 199, 0.4) 0%, rgba(21, 163, 199, 0.4) 100%);
+        @apply text-white text-[18px] leading-[27px] px-8 tracking-wider py-2 rounded-lg
+    }
+    .hero {
+        background-image: url('../assets/globe.png');
+        background-repeat: no-repeat;
+        background-position: right;
+        @apply  bg-cover h-full
+    }
+}
