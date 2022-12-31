@@ -1,10 +1,14 @@
 import Link from "next/link";
 import React from "react";
 
-function HomeLink() {
+type Props = {
+  text: string;
+}
+
+function HomeLink({text}:Props) {
   return (
     <Link href={"/"}>
-      <p className="home-link">
+      <p className={`home-link ${text}`}>
         Decen<span className="colored">tralized</span> Voting
       </p>
     </Link>

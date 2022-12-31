@@ -12,7 +12,7 @@
         @apply text-white font-popins leading-[27px] text-[20px] px-12
     }
     .home-link {
-        @apply text-white font-semibold leading-[54px] text-[36px] font-popins
+        @apply text-white font-semibold leading-[54px]  font-popins
     }    
     .colored {
         @apply text-primary

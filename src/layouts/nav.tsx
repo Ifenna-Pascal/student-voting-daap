@@ -6,7 +6,7 @@ import Button from "../ui/Button";
 function Nav() {
   return (
     <nav className="nav">
-      <HomeLink />
+      <HomeLink text='text-[38px]' />
       <div className="nav-display">
         <NavLink href="/vote" name="vote" />
         <NavLink href="/livescore" name="livescore" />
