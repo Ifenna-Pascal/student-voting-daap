@@ -34,9 +34,41 @@
         @apply text-white text-[18px] leading-[27px] px-8 tracking-wider py-2 rounded-lg
     }
     .hero {
-        background-image: url('../assets/globe.png');
+        background-image: url('/assets/globe.png');
         background-repeat: no-repeat;
         background-position: right;
         @apply  bg-cover h-full
+    }
+
+    .card-gradient {
+      /* border-color: linear-gradient( to bottom, #fff 50%, rgb(65, 64, 64) 10%); */
+    }
+
+    .gradient {
+        background: linear-gradient(149.78deg, rgba(255, 255, 255, 0.6) 0%, rgba(255, 255, 255, 0.2) 100%);
+        border: 1px solid #FFFFFF;
+        box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.05);
+        backdrop-filter: blur(20px);
+        border-radius: 20px;
+        width: 360px;
+        height: 151px
+    }
+
+    .sub {
+        background: linear-gradient(86.68deg, rgba(159, 37, 255, 0.156) 0%, rgba(37, 72, 255, 0.156) 99.67%);
+        box-shadow: 0px 0px 96px -21px rgba(120, 37, 255, 0.36);
+    }
+
+    .sub2 {
+        background: linear-gradient(96.54deg, rgba(159, 37, 255, 0.24) 0%, rgba(37, 72, 255, 0.24) 100%);
+    }
+
+    .input {
+        width: 440px;   
+        padding: 10px 10px; 
+        height: 44px;  
+        background: rgba(45, 49, 66, 0.2);
+        border: 2px solid rgba(72, 72, 95, 0.1);
+
     }
 }
