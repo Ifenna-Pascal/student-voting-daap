@@ -6,6 +6,7 @@ module.exports = {
     "./src/layouts/**/*.{js,ts,jsx,tsx}",
     "./src/sections/**/*.{js,ts,jsx,tsx}",
     "./src/ui/**/*.{js,ts,jsx,tsx}",
+    "./src/modals/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
     extend: {
