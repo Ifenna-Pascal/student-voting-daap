@@ -9,9 +9,9 @@ function Admin() {
 
   return (
      <AdminLayout>
-           {/* <AddCandidate />
-    <form onSubmit={startElection}>
-      <input type="string" className='input' onChange={(e)=>setTime(e.target.value) } required/>
+           <AddCandidate />
+    {/* <form onSubmit={startElection}> */}
+      {/* <input type="string" className='input' onChange={(e)=>setTime(e.target.value) } required/>
     <Button name='START' className='bg-green-400 w-[400px] p-6'/>
 
     </form> */}

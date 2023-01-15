@@ -13,6 +13,7 @@ function Livescore() {
      <section className='max-w-[1100px] mx-auto'>
     <Livescores post='president' />
       <Livescores post='vice president' />
+      <Livescores post='DOS' />
 
     </section>
    </Mainlayout>

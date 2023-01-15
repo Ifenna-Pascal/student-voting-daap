@@ -17,6 +17,8 @@ function Dashboard() {
       {/* <h1 className='font-popins font-semibold mb-8 text-white text-[26px] '>Candidates</h1> */}
       <Filter post="president" candidates={contract?.state?.candidates} />
       <Filter post="vice president" candidates={contract?.state?.candidates} />
+      <Filter post="DOS" candidates={contract?.state?.candidates} />
+
     </div>
    </Mainlayout>
   )
