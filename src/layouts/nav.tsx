@@ -16,7 +16,7 @@ function Nav() {
     <nav className="nav">
       <HomeLink text='text-[38px]' />
       <div className="nav-display">
-        <NavLink href="/vote" name="vote" />
+        <NavLink href="/dashboard" name="vote" />
         <NavLink href="/livescore" name="livescore" />
         <NavLink href="/about" name="about" />
         <div className="flex flex-col relative">

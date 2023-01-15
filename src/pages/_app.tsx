@@ -1,9 +1,9 @@
 import '../styles/globals.css'
 import type { AppProps } from 'next/app'
-import Mainlayout from '../layouts/mainlayout'
 import { ToastContainer } from 'react-toastify'
 import "react-toastify/dist/ReactToastify.min.css";
 import { ContractProvider } from '../context/contract.context';
+import 'remixicon/fonts/remixicon.css'
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
@@ -21,7 +21,7 @@ export default function App({ Component, pageProps }: AppProps) {
     theme="light"
   />
   <ContractProvider>
-  <Mainlayout><Component {...pageProps} /></Mainlayout>
+  <Component {...pageProps} />
   </ContractProvider>
     </>
   )
