@@ -5,10 +5,10 @@ import Button from '../ui/Button'
 
 function Subscriptions() {
   return (
-    <div className='max-w-[1400px]  mx-auto flex items-center rounded-[30px] justify-between my-12 p-4 sub h-[200px]'>
+    <div className='max-w-[1100px]  mx-auto flex items-center rounded-[30px] justify-between my-12 p-4 sub h-[200px]'>
         <div className='flex flex-col ml-8 justify-center'>
-            <h1 className='font-popins font-[600] text-white text-[24px] leading-[36px]'>Don't miss any Update</h1>
-            <p className='font-popins font-[300] text-[18px] py-2 text-[#D2D2D2] leading-[21px]'>subscribe to always know about the latest feature</p>
+            <h1 className='font-popins font-[600] text-white text-[20px] leading-[26px]'>Don't miss any Update</h1>
+            <p className='font-popins font-[300] text-[14px] py-1 text-[#D2D2D2] leading-[21px]'>subscribe to always know about the latest feature</p>
             <div className='flex py-3'>
                 <input className='input flex items-center text-[#DADADA] font-popins outline-none' placeholder='enter your email address' />
                 <Button  name='subscirbe' className='text-center mx-4 rounded-[10px] px-6 text-white font-popins py-2 sub2'/>

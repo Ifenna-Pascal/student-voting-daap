@@ -14,7 +14,7 @@ function Nav() {
   }
   return (
     <nav className="nav">
-      <HomeLink text='text-[38px]' />
+      <HomeLink text='text-[30px]' />
       <div className="nav-display">
         <NavLink href="/dashboard" name="vote" />
         <NavLink href="/livescore" name="livescore" />
