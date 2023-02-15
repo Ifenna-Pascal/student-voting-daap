@@ -14,6 +14,8 @@ function Livescore() {
     <Livescores post='president' />
       <Livescores post='vice president' />
       <Livescores post='DOS' />
+      <Livescores post='secretary'/>
+      <Livescores post='treasurer' />
 
     </section>
    </Mainlayout>

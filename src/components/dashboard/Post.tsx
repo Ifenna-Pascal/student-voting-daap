@@ -23,7 +23,7 @@ function Post({id, img, name, desc, position}: Props) {
             <div className='flex flex-col ml-5 max-w-[500px] w-full'>
                 <p className='block font-popins capitalize leading-[22px] text-[18px] font-[500]'>{name}</p>
                 <p className='font-popins capitalize py-2 text-gray-500  '>
-                    {desc} Lorem ipsum dolor sit amet consectetur adipisicing 
+                    {`${desc.substring(0,100)}...`}
                 </p>
                 <p className='block font-popins capitalize leading-[22px] text-[15px] font-[500]'>Post</p>
                 <p className='font-popins text-gray-500  '>

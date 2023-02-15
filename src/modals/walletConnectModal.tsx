@@ -10,9 +10,9 @@ const  WalletConnectModal:React.FC = () => {
         <div className='border-b py-2 px-4 w-full cursor-pointer border-white'>
             <p className='text-[16px]  text-white hover:text-primary hover:font-bold font-popins'>{shortner(contractHook?.account)}</p>
         </div>
-        <div className='py-2 px-4 w-full cursor-pointer border-white'>
+        <button className='py-2 px-4 w-full cursor-pointer border-white' onClick={() => contractHook?.setAccount('')}>
             <p className='text-[16px] text-white hover:text-primary hover:font-bold font-popins'>Disconnect</p>
-        </div>
+        </button>
     </div>
   )
 }

@@ -18,7 +18,6 @@ function Nav() {
       <div className="nav-display">
         <NavLink href="/dashboard" name="vote" />
         <NavLink href="/livescore" name="livescore" />
-        <NavLink href="/about" name="about" />
         <div className="flex flex-col relative">
         <Button className="connect" name={contractHook?.account ? shortner(contractHook?.account) : "connect"} onClick={contractHook?.account ? toggleDisplay : contractHook?.walletConnect } />
         {displayModal && <WalletConnectModal />}

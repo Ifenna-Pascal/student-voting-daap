@@ -37,8 +37,7 @@ function Candidate() {
         <button className='border-2 border-primary text-[24px] px-8 py-2 tracking-wider font-[500] relative rounded-md'><p className=''>{display ? `${hours}:${mins}:${secs}`: "Election Ended"}</p></button>
        </div>
        <p className='text-[18px] font-popins tracking-wider text-gray-700 py-8'>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic voluptatum sint consequatur voluptates mollitia veniam delectus neque sit quae quibusdam numquam, rerum asperiores atque, consectetur vero nihil minima dolores totam!
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Provident alias illum incidunt cumque fugit assumenda nam voluptates. Cum necessitatibus debitis nostrum autem consequuntur cumque incidunt? Laborum, recusandae neque? Repellendus, ipsum.
+            {contract?.state?.candidate?.details}
        </p>
        <button className='bg-primary text-white font-popins px-12 py-3  text-[20px] tracking-wider hover:bg-secondary duration-500' onClick={handleVote}>Vote</button>
     </div>

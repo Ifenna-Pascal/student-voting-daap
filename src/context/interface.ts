@@ -1,6 +1,7 @@
 import { MetaMaskInpageProvider } from "@metamask/providers";
-import React from "react";
+import React, { Dispatch, SetStateAction } from "react";
 import { formProps } from "../components/admin/AddCandidate";
+import { formPropss } from "../pages/admin/add";
 declare global {
   interface Window {
     ethereum?: MetaMaskInpageProvider;
@@ -14,7 +15,8 @@ export interface contractProps {
   walletConnect?: () => void;
   account?: string;
   state: reducerProps;
-  setCandidate: (form: formProps) => void;
+  setAccount: Dispatch<SetStateAction<string | null>>;
+  setCandidate: (form: any) => void;
   getAllCandidates: () => void;
   electionStarted: (time_in_minutes: number) => void;
   setIPFS: (ipfs: string) => void;

@@ -20,7 +20,8 @@ export const connectWallet = async (
     setAccount(accounts[0]);
     toast.success("Account connected successfully");
   } catch (e: any) {
-    toast.error(e.message);
+    console.log("connection error");
+    // toast.error(e.message);
   }
 };
 
@@ -40,7 +41,8 @@ export const confirmWalletConnection = async (
       setAccount(accounts[0]);
     }
   } catch (e: any) {
-    toast.error(e.message);
+    console.log(e);
+    // toast.error(e.message);
   }
 };
 
@@ -51,10 +53,13 @@ export const contractInstance = async () => {
   );
   const signer = await provider.getSigner();
   const contract = await new ethers.Contract(token.address, token.abi, signer);
+  console.log(contract, "contract");
+
   return contract;
 };
 
 export const addCandidate = async (data: Candidate) => {
+  console.log(data);
   try {
     const contract = await contractInstance();
     await contract.callStatic.addCandidate(
@@ -88,12 +93,14 @@ export const allCandidates = async () => {
   try {
     const contract = await contractInstance();
     const res = await contract.retrievecandiadates();
-    console.log(res);
+    console.log(res, "resss");
     return res;
   } catch (err) {
-    console.log(err);
+    console.log(err, "errroror");
   }
 };
+
+// https://goerli.infura.io/v3/ef053c2c3ba3413eac34c7124010cad0
 
 export const startElection = async (time_in_minutes: number) => {
   try {
@@ -126,7 +133,7 @@ export const setDetails = async () => {
     return details;
   } catch (err: any) {
     console.log(err);
-    toast.error(err?.message);
+    // toast.error(err?.message);
   }
 };
 

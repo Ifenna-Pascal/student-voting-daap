@@ -9,7 +9,7 @@ function Sidebar() {
          <div className='flex flex-col mt-16'>
             <SideLink name="Add Candidate" href="/admin/add" />
             <SideLink name="Election Start" href="/admin/start" />
-            <SideLink name="Profile" href="/admin/profile" />
+            {/* <SideLink name="Profile" href="/admin/profile" /> */}
          </div>
     </div>
   )

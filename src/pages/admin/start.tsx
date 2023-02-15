@@ -6,6 +6,7 @@ import Button from '../../ui/Button'
 
 function StartElection() {
     const contract = useContractHook();
+    // const []
     const [time, setTime] = useState<string>();
     const startElection  = (e: any) => {
       e.preventDefault()

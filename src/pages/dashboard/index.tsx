@@ -9,16 +9,15 @@ function Dashboard() {
     useEffect(() => {
         contract?.getAllCandidates();
     }, [])
-    // console.log(contract?.state?.deadline, contract?.state?.isElectionStarted, contract?.state?.startTime);
     
   return (
    <Mainlayout>
      <div className='flex flex-col  w-full px-16'>
-      {/* <h1 className='font-popins font-semibold mb-8 text-white text-[26px] '>Candidates</h1> */}
       <Filter post="president" candidates={contract?.state?.candidates} />
       <Filter post="vice president" candidates={contract?.state?.candidates} />
       <Filter post="DOS" candidates={contract?.state?.candidates} />
-
+      <Filter post="secretary" candidates={contract?.state?.candidates} />
+      <Filter post="treasurer" candidates={contract?.state?.candidates} />
     </div>
    </Mainlayout>
   )

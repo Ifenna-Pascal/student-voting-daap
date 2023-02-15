@@ -1,3 +1,4 @@
+import { useRouter } from 'next/router';
 import React from 'react'
 import { useContractHook } from '../context/contract.context'
 import Button from '../ui/Button'
@@ -5,6 +6,7 @@ import { shortner } from '../utility/account-shortner';
 
 function Hero() {
     const contractHook = useContractHook();
+    const router = useRouter();
  
   return (
     <section className='flex items-center h-[calc(80vh-24px)]  justify-between'>
@@ -14,7 +16,7 @@ function Hero() {
             <p className='text-white font-popins text-[16px] lg:w-[75%] leading-[25px]'>A platform that gives you access to a secure polling system. Developed using blockchain technology.</p>
             <div className='flex space-x-8 py-8'>
                 <Button name={contractHook?.account ? shortner(contractHook?.account) : "Connect Wallet"} className='bg-secondary text-white font-popins font-semibold px-12 py-4 rounded-[30px] text-[15px]  text-center' onClick={contractHook?.walletConnect} />
-                <Button name='Vote' className='bg-transparent text-secondary border-[3px] rounded-[30px] border-secondary ml-3 tracking-wider font-popins px-16 text-[15px]  text-center' />
+                <Button name='Vote' className='bg-transparent text-secondary border-[3px] rounded-[30px] border-secondary ml-3 tracking-wider font-popins px-16 text-[15px]  text-center' onClick={()=> router.push('/dashboard')} />
             </div>
         </div>
         <div className='hero basis-[50%]'></div>

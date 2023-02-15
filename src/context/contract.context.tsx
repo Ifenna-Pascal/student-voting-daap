@@ -18,7 +18,7 @@ export const initialState:reducerProps = {
 }
 
 export const ContractProvider = ({ children }: Props) => {
-  const [account, setAccount] = useState<string>('');
+  const [account, setAccount] = useState<any>('');
   const [state, dispatch] = useReducer(contractReducer, initialState);
 
   const setElectionsDetails = async() => {
@@ -86,7 +86,7 @@ export const ContractProvider = ({ children }: Props) => {
   }
 
   return (
-    <ContractContext.Provider value={{walletConnect, account, state, setCandidate, getAllCandidates, electionStarted, setIPFS, vote, candidateDetails }}>
+    <ContractContext.Provider value={{walletConnect, account, setAccount, state, setCandidate, getAllCandidates, electionStarted, setIPFS, vote, candidateDetails }}>
       {children}
     </ContractContext.Provider>
   )
